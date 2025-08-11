@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website Structure</title>
+    <style>
+        .cont{
+            display: flex;
+            flex-direction: column;
+        }
+        .hero{
+            display: flex;
+            flex-direction: row;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 20vh;
+            width: 100vw;
+            background-color: blue;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            height: 70vh;
+            width: 30vw;
+            background-color: aqua;
+        }
+        .right{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            width: 70vw;
+            background-color: aquamarine;
+        }
+        .footer{
+            height: 10vh;
+            width: 100vw;
+            background-color: blue;
+        }
+        .box{
+            height: 75px;
+            width: 350px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            background-color: aliceblue;
+        }
+        .card{
+            height: 280px;
+            width: 280px;
+            background-color: aliceblue;  
+        }
+        .nav{
+            list-style-type: none;
+            display: flex;
+            gap: 10px;
+            margin-right: 15px;
+        }
+        a{
+            color: aliceblue;
+            font-size: 1 rem;
+            text-decoration: none;
+            background-color: orange;
+        }
+        .logo{
+            margin-left: 15px;
+        }
+
+
+    </style>
+</head>
+<body style="margin: 0;">
+    <div class="cont">
+        <div class="header">
+            <h1 class="logo">LOGO</h1>
+            <ul class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Products</a></li>
+            </ul>
+        </div>
+        <div class="hero">
+            <div class="left">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="right">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+    
+</body>
+</html>
